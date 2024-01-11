@@ -26,6 +26,7 @@ public class LocateById {
 		
 		WebElement lblError = driver.findElement(By.id("lblMsg"));
 		String actError = lblError.getText();
+		driver.close();
 		assertEquals(actError, "Invalid Username/Password");
 	}
 }
